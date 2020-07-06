@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-img {
+	width: 550px;
+	height: 480px;
+	border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Hero */
+.defaultHero {
+	min-height: calc(100vh - 66px);
+	background: url('./img/bg.png') center/cover no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* End of Hero */
+
+.wrap {
+	background: #444;
+	opacity: 0.9;
+	padding: 1.5rem;
+	width: 55%;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+.wrap h1 {
+	font-size: 3.5rem;
+	font-weight: 900;
+	color: #fff;
+	text-align: center;
+}
+.wrap hr {
+	border-top: 5px dotted #fff;
+	width: 55%;
+	margin: auto;
+}
+.wrap p {
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 0.9rem;
+	letter-spacing: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.icons {
+	display: flex;
+	justify-content: space-between;
+	width: 55%;
+	margin: auto;
+	font-size: 5rem;
+}
+.icons i {
+	padding: 10px;
+	color: orange;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Portfolio*/
+.portfolio-grid {
+	display: flex;
+	justify-content: center;
+}
+
+/*Resume*/
+.resume {
+	background: #444;
+	color: #fff;
+	padding: 2rem;
+}
+
+/*Contact*/
+.contact {
+	margin: auto;
+	position: fixed;
+	width: 100%;
+	padding-top: 2rem;
+	display: flex;
+	justify-content: center;
+}
+.contact-grid {
+	text-align: center;
+	justify-content: center;
+	width: 50%;
+	height: 550px;
+	background: #fff;
+	color: #444;
+	border: 2px solid orange;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+.img {
+	width: 250px;
+	height: 300px;
+	border-radius: 45%;
+}
+.text {
+	width: 75%;
+	margin: auto;
+	padding-top: 1rem;
+	letter-spacing: 5;
+}
+.contact-grid h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 800;
+}
+.contact-grid hr {
+	border-top: 5px dotted #444;
+	width: 50%;
+	margin: auto;
+}
+.contact-list i {
+	font-size: 70px;
+	padding-right: 6rem;
+	color: orange;
 }
